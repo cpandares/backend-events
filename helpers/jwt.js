@@ -12,7 +12,7 @@ const jwtGenerate = ( uid,name )=>{
         }, (error, token) =>{
 
             if(error){
-                console.log(error);
+               
                 reject('Token error')
             }
 

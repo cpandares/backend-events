@@ -39,7 +39,7 @@ router.post(
     login
     )
 
-router.get('/renew', jwtValidate ,renewToken)
+router.get('/renew', jwtValidate,renewToken)
 
 
 module.exports = router;

@@ -5,12 +5,13 @@ const jwt  = require('jsonwebtoken');
 const jwtValidate = (req, res = response, next)=>{
 
     const token = req.header('x-token');
+    
 
     if(!token){
         return res.status(401).json({
             ok: false,
             msg: 'Not authenticated'
-        })
+        });
     }
 
     try {
@@ -25,7 +26,7 @@ const jwtValidate = (req, res = response, next)=>{
         
     } catch (error) {
         return res.status(401).json({
-            ok: falsem,
+            ok: false,
             msg: 'Invalid token'
         })
     }

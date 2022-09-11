@@ -11,10 +11,10 @@ const dbConnection = async()=>{
             
         });
 
-        console.log('Db Online')
+       
         
     } catch (error) {
-        console.log(error)
+       
         throw new Error('Error Db connection')
     }
 }
