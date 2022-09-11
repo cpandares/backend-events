@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
+    "build": "Esto no hace nada",
     "start": "node index.js"
   },
   "keywords": [],
